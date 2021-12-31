@@ -1,0 +1,345 @@
+*{
+    margin: 0;
+    padding: 0;
+   
+}
+
+body{
+     box-sizing: border-box;
+}
+:root {
+  --AnimationMargintop: 85px; 
+  --AnimationMarginleft:150px;
+}
+
+.container {
+   display: flex;
+   position: relative;
+   scroll-behavior: smooth;
+}
+.title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.title h1 {
+    font-size: 2.1em;
+
+}
+
+.sidebar {
+    position: fixed;
+    width: 15vw;
+    height: 65.8vh;
+    background: linear-gradient(rgb(20, 6, 51),rgba(194, 51, 230, 0.884));
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px;
+    color : #fff;
+    padding: 8vw;
+}
+
+
+
+
+
+.nav {
+    margin-top: 8vh;
+    text-decoration: none;
+    
+}
+
+
+.nav ul > li {
+    list-style: none;
+    font-size: 25px;
+    padding: 8px;
+}
+
+ul > li > a , #an-link{
+    text-decoration: none;
+    color: #fff;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+
+
+.mainContent {
+    position: relative;
+    z-index: -1;
+    margin-left: 30vw;
+     width: 69vw;
+    background: linear-gradient(purple,black);
+    overflow: hidden;
+   color: #fff;
+}
+
+section {
+    min-height: 100vh;
+    padding: 2rem;
+}
+
+
+.design{
+    top: 0;
+    position: absolute;
+    height: 100vh;
+  
+    overflow: hidden;
+    z-index: -1;
+    display: flex;
+}
+
+
+
+
+
+#nodejsLogo{
+    animation: animation1  18s infinite linear;
+}
+#ExpressjsLogo , #JavaLogo{
+    animation: animation1  20s infinite linear;
+} 
+
+#MongoDBLogo{
+     animation: animation1  24s infinite linear;
+}
+
+#SqlLogo, #ReactjsLogo, #HTMLLogo {
+    animation: animation1  25s infinite linear;
+}
+
+
+#nodejsLogo img,  #ExpressjsLogo img, #MongoDBLogo img, #SqlLogo img, #JavaLogo img, #HTMLLogo img{
+     width: 150px;
+    height: 100px;
+}
+
+#ReactjsLogo img{
+    width: 200px;
+    height: 200px;
+}
+.location{
+    margin:24px 0px 0px 10px ;
+    font-size: 20px;
+    text-align: center;
+}
+
+.pic {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: rotateleft 2s  linear infinite;
+    animation-delay: 0.9s;
+}
+
+.pic img {
+    width: 60px;
+    height: 60px;
+
+}
+
+.profile {
+    position: relative;
+     margin-top: -5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 3.5rem;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    animation: rotateColor 2s  linear infinite;
+    animation-delay: 0.9s;
+    background: linear-gradient(#560692 , rgb(134, 56, 56) );
+}
+
+
+
+.wrapper{
+    margin-bottom: 18rem;
+    top: 4em;
+    left: -5rem;
+    position: relative;
+    height: 250px;
+    width: 400px;
+    color: #fff;
+}
+
+#text-MobileView, #text-DesktopView {
+    position: absolute;
+    top: -4rem;
+    left: 14rem;
+}
+
+#text-DesktopView {
+    left: 44rem;
+    top: -7rem;
+}
+
+
+
+.shape-1{
+    height: 47vh;
+    width: 47vh;
+    position: relative;
+    left: 35em;
+    top: .5em;
+    background: linear-gradient(
+        45deg,
+        #a71111,
+        #01012e
+    );
+    border-radius: 50%;
+    
+}
+
+.shape-2{
+    height: 180px;
+    width: 180px;
+    background: linear-gradient(
+        45deg,
+        #0a0213a6,
+        #d3cccf
+    );
+    top: -16.2em;
+    left: 5.5em;
+    position: relative;
+    border-radius: 50%;
+  
+}
+.card{
+    position: absolute;
+    height: 49vh;
+    width: 50vw;
+    margin-top: -30em;
+    left: 5em;
+    background-color: rgba(255,255,255,0.06);
+    border-radius: 10px;
+    box-shadow: 20px 20px 25px rgba(0,0,0,0.2);
+    backdrop-filter: blur(15px);
+
+}
+
+
+.card #project-4_img1 {
+    width: 60%;
+    position: absolute;
+    left: 29rem;
+    top: -2rem;
+    filter: drop-shadow(8px 8px 10px rgba(0,0,0,0.6));
+
+}
+
+.card #project-4_img2 {
+    position: absolute;
+    width: 10.5rem;
+    height: 15rem;
+    left: 18rem;
+    top: -9rem;
+}
+.text-container{
+    position: relative;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    left: 30px;
+    justify-content: center;
+}
+.text-container h2{
+    margin-bottom: 20px;
+    color: #ffffff;
+    font-family: "Poppins",sans-serif;
+    font-weight: 600;
+    letter-spacing: 3px;
+    font-size: 30px;
+}
+.text-container p{
+    color: #d5d5d5;
+    font-family: "Poppins",sans-serif;
+    font-size: 13px;
+    line-height: 25px;
+    letter-spacing: 0.2px;
+    text-align: justify;
+}
+
+
+#Formore {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#btn-formore {
+    padding: 0.5rem 2rem 0.5rem 2rem;
+    border-radius: 25px;
+    background-color: transparent;
+    color: #fff;
+    cursor: pointer;
+    top: 2rem;
+}
+
+#btn-formore:hover {
+    background-color: #fff;
+    color: purple;
+    font-weight: bolder;
+}
+
+@keyframes rotateColor {
+    0%   { transform: rotate(30deg); }
+    25%  { transform: rotate(60deg);}
+    50%  { transform: rotate(90deg);}
+    75%  {transform: rotate(180deg);}
+    100% { transform: rotate(360deg);}
+}
+
+@keyframes rotateleft {
+    0%   { transform: rotate(-30deg); }
+    25%  { transform: rotate(-60deg);}
+    50%  { transform: rotate(-90deg);}
+    75%  {transform: rotate(-180deg);}
+    100% { transform: rotate(-360deg);}
+}
+/*
+@keyframes Triangle_Animation {
+0% {
+    left: 50px;
+}
+25% {
+    
+    margin-left: calc(var(--AnimationMarginleft)*(2));
+    margin-top: calc(var(--AnimationMargintop)*5);
+}
+50% {
+    margin-left: calc(var(--AnimationMarginleft)*(-5));
+    margin-top: calc(var(--AnimationMargintop));
+}
+
+70% {
+    margin-left: calc(var(--AnimationMarginleft*(-8)));
+    margin-top: calc(var(--AnimationMargintop)*(-8));
+}
+100% {
+    margin-left: calc(var(--AnimationMarginleft)*(20));
+    margin-top: calc(var(--AnimationMargintop)*(10));
+}
+}*/
+
+@keyframes animation1 {
+    0%{transform: rotateX(0) rotateY(0) rotateZ(0);}
+    
+    55%{
+        transform: rotateX(-90deg) rotateY(-90deg) rotateZ(-90deg);
+        animation-delay: 5s;
+    }
+    85%{
+        transform: rotateX(50deg) rotateY(50deg);;
+    }
+  100%{transform:  rotateZ(360deg);}
+    
+}
