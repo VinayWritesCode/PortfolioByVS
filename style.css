@@ -16,7 +16,41 @@ body{
    display: flex;
    position: relative;
    scroll-behavior: smooth;
+   top: 8.7vh;
 }
+.menubar {
+    margin: .5rem;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.bar1, .bar2, .bar3 {
+  width: 35px;
+  height: 5px;
+  background-color: #fff;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+.change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+  transform: rotate(-45deg);
+   width: 25px;
+  height: 5px;
+  margin-top: 7px;
+}
+
+.change .bar2 {opacity: 0;}
+
+.change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px);
+  transform: rotate(45deg);
+  width: 25px;
+  height: 5px;
+  margin-top: -7px;
+}
+
+
 .title {
     display: flex;
     align-items: center;
@@ -24,19 +58,32 @@ body{
 }
 .title h1 {
     font-size: 2.1em;
+    margin-bottom: 10rem;
+}
 
+.topbar  {
+    position: fixed;
+    background-color: rgb(1, 1, 12);
+    width: 100vw;
+    height: 4rem;
 }
 
 .sidebar {
     position: fixed;
-    width: 15vw;
+    width: 12vw;
     height: 65.8vh;
     background: linear-gradient(rgb(20, 6, 51),rgba(194, 51, 230, 0.884));
     border-bottom-right-radius: 20px;
     border-top-right-radius: 20px;
     color : #fff;
     padding: 8vw;
+    transition: .5s ease-in-out;
 }
+
+.change .sidebar {
+    margin-left: -12vw;
+}
+
 
 
 
@@ -53,6 +100,7 @@ body{
     list-style: none;
     font-size: 25px;
     padding: 8px;
+    margin-left: -2rem;
 }
 
 ul > li > a , #an-link{
@@ -67,8 +115,8 @@ ul > li > a , #an-link{
 .mainContent {
     position: relative;
     z-index: -1;
-    margin-left: 30vw;
-     width: 69vw;
+    margin-left: 26.5vw;
+     width: 72vw;
     background: linear-gradient(purple,black);
     overflow: hidden;
    color: #fff;
@@ -162,7 +210,7 @@ section {
 .wrapper{
     margin-bottom: 18rem;
     top: 4em;
-    left: -5rem;
+    left: -2rem;
     position: relative;
     height: 250px;
     width: 400px;
@@ -225,21 +273,21 @@ section {
 }
 
 
+
 .card #project-4_img1 {
     width: 60%;
     position: absolute;
     left: 29rem;
     top: -2rem;
     filter: drop-shadow(8px 8px 10px rgba(0,0,0,0.6));
-
 }
 
 .card #project-4_img2 {
     position: absolute;
     width: 10.5rem;
-    height: 15rem;
+    height: 17rem;
     left: 18rem;
-    top: -9rem;
+    top: -10rem;
 }
 .text-container{
     position: relative;
