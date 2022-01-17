@@ -24,7 +24,8 @@ body{
    top: 8.7vh;
 }
 .menubar {
-    margin: .5rem;
+    margin: .6rem;
+    padding-left: 1rem;
     display: inline-block;
     cursor: pointer;
 }
@@ -37,7 +38,7 @@ body{
   transition: 0.4s;
 }
 
-.change .bar1 {
+ .change .bar1 {
   -webkit-transform: rotate(-45deg) translate(-9px, 6px);
   transform: rotate(-45deg);
    width: 25px;
@@ -47,7 +48,7 @@ body{
 
 .change .bar2 {opacity: 0;}
 
-.change .bar3 {
+ .change .bar3{
   -webkit-transform: rotate(45deg) translate(-8px, -8px);
   transform: rotate(45deg);
   width: 25px;
@@ -67,7 +68,7 @@ body{
 }
 
 .topbar  {
-    position: fixed;
+    position: absolute;
     background-color: rgb(1, 1, 12);
     width: 100vw;
     height: 4rem;
@@ -75,7 +76,7 @@ body{
 
 
 
-.sidebar {
+#sidebar {
     position: fixed;
     width: 12vw;
     height: 65.8vh;
@@ -85,16 +86,8 @@ body{
     color : #fff;
     padding: 8vw;
     transition: .5s ease-in-out;
+    margin-left: -30vw;
 }
-
-.change .sidebar {
-    margin-left: -12vw;
-}
-
-
-
-
-
 
 .nav {
     margin-top: 8vh;
@@ -135,8 +128,7 @@ ul > li > a , #an-link{
 .mainContent {
     position: relative;
     z-index: -1;
-    margin-left: 26.5vw;
-     width: 72vw;
+     width: 100vw;
     background: linear-gradient(purple,black);
     overflow: hidden;
    color: #fff;
@@ -145,6 +137,7 @@ ul > li > a , #an-link{
 section {
     min-height: 100vh;
     padding: 2rem;
+   
 }
 
 
@@ -152,8 +145,7 @@ section {
     top: 0;
     position: absolute;
     height: 100vh;
-  
-    overflow: hidden;
+    left: 35vw;
     z-index: -1;
     display: flex;
 }
@@ -226,6 +218,12 @@ section {
 }
 
 
+#one,#two, #three, #four {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    margin-left: -20vw;
+}
 
 .wrapper{
     margin-bottom: 18rem;
